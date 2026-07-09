@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sI https://stephaniegessler.github.io/)",
+      "Bash(git push *)",
+      "Bash(git config *)"
+    ]
+  }
+}
