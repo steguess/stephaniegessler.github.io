@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Stephanie Gessler - EU Drug Shortage Monitor</title>
+    <meta name="description" content="EU Drug Shortage Monitor: a self-built, end-to-end data product that scrapes 25+ national medicines registers, harmonizes them to WHO ATC codes and surfaces cross-country supply risks on an interactive dashboard.">
+    <meta name="keywords" content="Stephanie Gessler, Drug Shortage, Pharma Analytics, Web Scraping, Data Engineering, FastAPI, PostgreSQL, WHO ATC, Supply Chain, Dashboard, Portfolio">
+
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Custom CSS for this page -->
+    <style>
+        .portfolio-details-slider {
+          max-width: 100%;
+          overflow: hidden;
+        }
+        .portfolio-details-slider img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          border-radius: 10px;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .portfolio-title {
+          color: #18d26e;
+          font-size: 2.2rem;
+          margin-bottom: 30px;
+          padding-bottom: 15px;
+          border-bottom: 3px solid #18d26e;
+        }
+        .section-header {
+          color: #18d26e;
+          font-size: 1.5rem;
+          margin-top: 30px;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #18d26e;
+        }
+        .portfolio-info {
+          background-color: rgba(255, 255, 255, 0.05);
+          padding: 20px;
+          border-radius: 10px;
+          margin-bottom: 20px;
+        }
+        .key-achievements ul {
+          list-style-type: none;
+          padding-left: 0;
+        }
+        .key-achievements ul li {
+          margin-bottom: 15px;
+          padding-left: 25px;
+          position: relative;
+        }
+        .key-achievements ul li i {
+          color: #18d26e;
+          position: absolute;
+          left: 0;
+          top: 5px;
+        }
+        .back-link {
+          display: inline-block;
+          margin-bottom: 25px;
+          color: #18d26e;
+          font-weight: 600;
+          text-decoration: none;
+        }
+        .back-link:hover {
+          color: #35e888;
+        }
+      </style>
+</head>
+
+<body>
+<main id="main">
+  <div id="portfolio-details" class="portfolio-details">
+    <div class="container">
+      <a href="index.html#portfolio" class="back-link"><i class="bi bi-arrow-left"></i> Back to portfolio</a>
+      <h2 class="portfolio-title text-center">EU Drug Shortage Monitor: Real-Time Shortage Intelligence Across Europe</h2>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/EU_Shortage_Monitor1.png" alt="EU Drug Shortage Monitor dashboard with Europe map" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/EU_Shortage_Monitor2.png" alt="Cross-country molecule shortage table" class="img-fluid">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="portfolio-info">
+            <h3>Project Information</h3>
+            <ul>
+              <li><strong>Category:</strong> End-to-End Data Product (Personal Project)</li>
+              <li><strong>Scope:</strong> 25 European countries + EMA</li>
+              <li><strong>Project date:</strong> 2026 &ndash; ongoing</li>
+              <li><strong>Stack:</strong> Python, FastAPI, PostgreSQL, cloud deployment</li>
+            </ul>
+            <h4 class="section-header">Description</h4>
+            <p>A platform I designed, built and operate end-to-end that turns fragmented national drug-shortage registers into one comparable, decision-ready view of Europe. It tracks 13,000+ active shortages across 2,000+ molecules, harmonizes every record to WHO ATC codes, and flags cross-country supply risks — the same product and manufacturer running short in several markets at once — before they become the next headline.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 key-achievements">
+          <h4 class="section-header">Key Achievements</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <strong>Automated Data Collection:</strong> 30+ scrapers for national medicines agencies (ANSM, AIFA, BASG, SÚKL, Fimea and more) plus EMA — designed to self-heal on changing sources and fail loudly rather than go silently stale.</li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Data Harmonization:</strong> Normalizes heterogeneous, multilingual records into a single model — WHO ATC classification, molecule matching, translated shortage reasons and manufacturer mapping.</li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Supply-Risk Detection:</strong> Cross-country logic that surfaces molecules short in many markets simultaneously, with resolution timelines and shortage-reason analytics.</li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Interactive Dashboard:</strong> Europe heat map, country and ATC filters, watchlists, company search and CSV export — dark and light mode included.</li>
+            <li><i class="bi bi-chevron-right"></i> <strong>Production Deployment:</strong> FastAPI + PostgreSQL backend running in the cloud with scheduled daily refresh jobs, authentication and monitoring.</li>
+            <li><i class="bi bi-chevron-right"></i> <strong>AI-Accelerated Development:</strong> Built solo in weeks, not months, using an AI-assisted engineering workflow — a working example of the productivity I help organisations unlock.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -679,6 +679,27 @@ section .container {
   padding-bottom: 10px;
 }
 
+.resume .resume-item ul.cert-list li {
+  padding-bottom: 14px;
+}
+
+.resume .resume-item ul.cert-list li a {
+  color: #18d26e;
+  font-weight: 600;
+}
+
+.resume .resume-item ul.cert-list li a:hover {
+  color: #35e888;
+}
+
+.resume .resume-item ul.cert-list li small {
+  display: block;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 13px;
+  line-height: 1.5;
+  padding-top: 2px;
+}
+
 .resume .resume-item:last-child {
   padding-bottom: 0;
 }
@@ -821,6 +842,23 @@ section .container {
   overflow: hidden;
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
+}
+
+/* Uniform tile size: every thumbnail fills the same 4:3 box, cropped from the
+   centre, so the grid stays even regardless of the source image dimensions. */
+.portfolio .portfolio-wrap img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Flat logo artwork must not be cropped: fit it whole inside the same 4:3 box
+   and fill the sides with the logo's own background colour. */
+.portfolio .portfolio-wrap img.tile-logo {
+  object-fit: contain;
+  background: #279b48;
 }
 
 .portfolio .portfolio-wrap::before {
